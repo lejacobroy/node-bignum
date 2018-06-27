@@ -1,6 +1,9 @@
 os:
   - linux
   - osx
+node_js:
+  - 6
+  - 8
 sudo: false
 language: node_js
 addons:
@@ -11,10 +14,8 @@ addons:
     - g++-4.8
 env:
   matrix:
-  - TRAVIS_NODE_VERSION="0.10"
-  - TRAVIS_NODE_VERSION="0.12"
-  - TRAVIS_NODE_VERSION="4"
-  - TRAVIS_NODE_VERSION="6"
+  - TRAVIS_NODE_VERSION="8"
+  - TRAVIS_NODE_VERSION="10"
 notifications:
   email:
     - rod@vagg.org
